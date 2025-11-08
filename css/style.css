@@ -1,0 +1,498 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Logo */
+.logo {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img {
+  width: 20%;
+  border: 3px solid white;
+  border-radius: 10px;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #004080; /* dark blue for impact */
+  padding: 0 20px;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+}
+
+.nav-list li {
+  list-style: none;
+  padding: 20px;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  color: white;   
+  font-weight: bold;
+  transition: color 0.3s ease;
+  font-size: 1rem;
+}
+
+.nav-list li a:hover {
+  color: #ffeb3b; /* yellow highlight */
+}
+
+.rightNav {
+  text-align: right;
+}
+
+#search {
+  padding: 6px 10px;
+  font-size: 16px;
+  border: 2px solid #ff4081;
+  border-radius: 6px;
+  outline: none;
+}
+.button-group{
+    display: flex;
+    gap: 15px;
+    margin-top:20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.btn {
+  padding: 8px 20px;
+  margin: 7px 0;
+  border: 2px solid white;
+  border-radius: 8px;
+  background: none;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  min-width: 140px;
+  text-align: center;
+}
+
+.btn:hover {
+  background: #ff4081;
+  border-color: #ff4081;
+}
+
+/* Hero Section */
+.background {
+  background: rgba(0, 0, 0, 0.6) url("../img/images.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: darken;
+}
+
+.firstsection {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.box-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 90%;  
+  margin: auto;
+  gap: 40px;
+}
+
+.firstHalf {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.secondHalf {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.secondHalf img {
+  width: 80%;
+  border-radius: 10px;
+}
+
+.text-big {
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+
+.text-small {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+/* About Section */
+.about-section {
+  padding: 60px 20px;
+  background: #f8f9fa;
+  text-align: center;
+}
+
+.about-section .container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.about-section h2 {
+  font-size: 2.2rem;
+  color: #c2185b;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.about-section p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* Resources Section */
+#resources {
+  background: #f9f9f9;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+#resources .container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+#resources h2 {
+  font-size: 2.4rem;
+  color: #c2185b;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+#resources p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+}
+
+#resources .resource-links {
+  margin-top: 30px;
+}
+
+#resources .resource-links a {
+  background: #e91e63;
+  color: #fff;
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 8px;
+  margin: 8px;
+  display: inline-block;
+  transition: background 0.3s ease, transform 0.2s ease;
+  font-size: 1rem;
+}
+
+#resources .resource-links a:nth-child(2) { background: #4caf50; }
+#resources .resource-links a:nth-child(3) { background: #2196f3; }
+
+#resources .resource-links a:hover {
+  transform: translateY(-3px);
+  opacity: 0.9;
+}
+
+/* FindCare Section */
+#findcare {
+  background: #fff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+#findcare .container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+#findcare h2 {
+  font-size: 2.4rem;
+  color: #c2185b;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+#findcare p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+#findcare .findcare-button a {
+  background: #c2185b;
+  color: #fff;
+  padding: 14px 28px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+#findcare .findcare-button a:hover {
+  background: #5e35b1;
+  transform: translateY(-3px);
+}
+
+/* Contact Section */
+#contact {
+  background: #f4f6f9;
+  padding: 60px 20px;
+}
+
+#contact .container {
+  max-width: 1100px;
+  margin: auto;
+  text-align: center;
+}
+
+#contact h2 {
+  font-size: 2.5rem;
+  color: #c2185b;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+#contact p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.contact-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.contact-form, .contact-info {
+  flex: 1;
+  min-width: 300px;
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+.contact-form form input,
+.contact-form form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.contact-form form button {
+  background: #e91e63;
+  color: #fff;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: background 0.3s ease;
+}
+
+.contact-form form button:hover {
+  background: #d81b60;
+}
+
+.contact-info h3 {
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+  color: #673ab7;
+}
+
+.contact-info p {
+  margin: 10px 0;
+  font-size: 1rem;
+  color: #444;
+}
+
+.social-links {
+  margin-top: 20px;
+}
+
+.social-links a {
+  display: inline-block;
+  margin-right: 12px;
+  text-decoration: none;
+  font-size: 1rem;
+  color: #fff;
+  background: #2196f3;
+  padding: 8px 15px;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+.social-links a:nth-child(2) { background: #3b5998; } /* Facebook */
+.social-links a:nth-child(3) { background: #1da1f2; } /* Twitter */
+.social-links a:nth-child(4) { background: #e4405f; } /* Instagram */
+
+.social-links a:hover {
+  opacity: 0.9;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .box-main {
+    flex-direction: column;
+    text-align: center;
+  }
+  .nav-list {
+    flex-direction: column;
+  }
+}
+/* Yellow hover effect for hero section CerviCare */
+.hover-yellow {
+    color: white; /* default color */
+    cursor: pointer;
+    transition: color 0.3s ease; /* smooth transition */
+}
+
+.hover-yellow:hover {
+    color: #ffeb3b; /* yellow on hover */
+}
+/* Light Pink / Coral hover effect */
+.hover-coral {
+    color: #c2185b; /* original pink color */
+    cursor: pointer;
+    transition: color 0.3s ease; /* smooth color transition */
+}
+
+.hover-coral:hover {
+    color: #ff80ab; /* Light Pink / Coral on hover */
+}
+
+/* Popup Modal */
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 2000; 
+  left: 0; 
+  top: 0; 
+  width: 100%; 
+  height: 100%; 
+  background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 15% auto;
+  padding: 30px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.modal-content h3 {
+  margin-bottom: 20px;
+  color: #c2185b;
+}
+
+.modal-content input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.close {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #333;
+}
+
+.close:hover {
+  color: #c2185b;
+}
+.reminder-section {
+  background-color: #ffe6f0; /* soft pink */
+  padding: 30px;
+  margin: 30px 0;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.reminder-section h2 {
+  color: #c2185b;
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.reminder-input {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.reminder-input input[type="date"] {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.reminder-input button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #c2185b;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.reminder-input button:hover {
+  background-color: #a31546;
+}
+
+.reminder-message {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #4caf50;
+}
+
+

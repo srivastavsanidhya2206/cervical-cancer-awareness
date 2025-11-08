@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CerviCare - Cervical Cancer Awareness</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar background">
+      <div class="logo">
+        <img src="img/bg.jpg" alt="CerviCare Logo">
+      </div>
+      <ul class="nav-list">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#resources">Resources</a></li>
+        <li><a href="#findcare">Find Care</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="rightNav">
+        <input type="text" name="search" id="search" placeholder="Search...">
+        <button class="btn btn-sm">Search</button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="background firstsection">
+    <div class="box-main">
+      <div class="firstHalf">
+        <h1 class="text-big hover-yellow">CerviCare</h1>
+        <p class="text-small">
+          Empowering women across India with AI-driven cervical cancer awareness, early
+          detection, and compassionate care guidance — breaking barriers of stigma and taboo.
+        </p>
+        <div class="buttons">
+          <button class="btn">Get Started</button>
+          <button class="btn">Learn More</button>
+        </div>
+      </div>
+      <div class="secondHalf">
+        <img src="img/bg.jpg" alt="CerviCare Awareness Image">
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <h2>About</h2>
+      <p>
+        CerviCare is an AI-driven health awareness platform dedicated to 
+        empowering women with reliable information about cervical cancer. 
+        Our mission is to break the stigma, spread awareness and encourage 
+        early detection through a simple, private and accessible chatbot. 
+        By combining technology, healthcare expertise and user-friendly 
+        design. CerviCare aims to guide women towards prevention, timely 
+        screening and improved well-being.
+      </p>
+      <p>
+        With CerviCare, we believe that awareness can save lives. 
+        Together, we can build a future where no woman is left behind 
+        due to lack of knowledge or hesitation in seeking help.
+      </p>
+    </div>
+  </section>
+
+  <!-- Resources Section -->
+  <section id="resources">
+    <div class="container">
+      <h2>Resources</h2>
+      <p>
+        At <strong>CerviCare</strong>, we believe awareness saves lives. This section provides 
+        easy access to trusted information on cervical cancer prevention, early detection
+        and treatment. Our resources are curated from reliable health organizations to help 
+        women and families make informed decisions about their health.
+      </p>
+      <p>
+        From global guidelines to government initiatives, these resources aim to break 
+        barriers, encourage timely screenings and empower communities with the knowledge 
+        they deserve.
+      </p>
+
+      <div class="resource-links">
+        <a href="https://www.who.int/health-topics/cervical-cancer" target="_blank">WHO Guidelines</a>
+        <a href="https://www.nhp.gov.in/" target="_blank">National Health Portal</a>
+        <a href="https://www.cdc.gov/cancer/cervical/" target="_blank">CDC Resources</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Find Care Section -->
+  <section id="findcare">
+    <div class="container">
+      <h2>Find Care</h2>
+      <p>
+        At <strong>CerviCare</strong>, we believe that access to timely medical support 
+        can make all the difference in preventing and treating cervical cancer. Our 
+        FindCare feature helps you connect with nearby hospitals, clinics and 
+        healthcare providers who specialize in women’s health. Whether you need screening, 
+        vaccination or expert consultation, CerviCare guides you towards the right 
+        facilities with ease. By bridging the gap between awareness and action, we ensure 
+        that every woman can access quality care when it matters the most.
+      </p>
+      <div class="findcare-button">
+        <a href="#" id="findCareBtn">Find Nearby HealthCare</a>
+      </div>
+    </div>
+  </section>
+  <!-- Vaccination Reminder Section -->
+<section id="vaccinationReminder" class="reminder-section">
+  <div class="container">
+    <h2>Vaccination Reminder</h2>
+    <p>Stay on top of your cervical cancer vaccination schedule.</p>
+    <div class="reminder-input">
+      <input type="date" id="vaccineDate" placeholder="Select date">
+      <button class="btn" id="setReminder">
+        📅 Set Reminder
+      </button>
+    </div>
+    <p id="reminderMessage" class="reminder-message"></p>
+  </div>
+</section>
+
+
+  <!-- Location Popup Modal -->
+  <div id="locationModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3>Enter Your Location</h3>
+      <input type="text" id="userLocation" placeholder="Search your city or area">
+      <button class="btn" id="submitLocation">Search Care</button>
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p>
+        We’re here to listen, guide and support you. Reach out to us for any 
+        queries, feedback or collaborations. At <strong>CerviCare</strong>, 
+        your health and awareness matter the most.
+      </p>
+
+      <div class="contact-wrapper">
+        <!-- Contact Form -->
+        <div class="contact-form">
+          <form action="#" method="post">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <input type="text" name="subject" placeholder="Subject" required>
+            <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="contact-info">
+          <h3>Get in Touch</h3>
+          <p><strong>📍 Address:</strong> CerviCare HQ, New Delhi, India</p>
+          <p><strong>📞 Phone:</strong> +91 98765 43210</p>
+          <p><strong>📧 Email:</strong> support@cervicare.org</p>
+
+          <div class="social-links">
+            <a href="#" target="_blank">🌐 Website</a>
+            <a href="#" target="_blank">📘 Facebook</a>
+            <a href="#" target="_blank">🐦 Twitter</a>
+            <a href="#" target="_blank">📸 Instagram</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Chatbot Container -->
+<div id="webchat"></div>
+
+  
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 CerviCare | Empowering Women Through Awareness</p>
+  </footer>
+
+  <!-- JS for Modal -->
+  <script>
+    const modal = document.getElementById("locationModal");
+    const btn = document.getElementById("findCareBtn");
+    const span = document.getElementsByClassName("close")[0];
+
+    btn.onclick = function (event) {
+      event.preventDefault();
+      modal.style.display = "block";
+    }
+
+    span.onclick = function () {
+      modal.style.display = "none";
+    }
+
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+
+    document.getElementById("submitLocation").onclick = function () {
+      let location = document.getElementById("userLocation").value;
+      if (location) {
+        window.open(`https://www.google.com/maps/search/hospitals+near+${location}`, "_blank");
+      } else {
+        alert("Please enter your location.");
+      }
+    }
+  </script>
+  <!-- JS for Vaccination Reminder -->
+<script>
+  document.getElementById("setReminder").onclick = function () {
+    const selectedDate = document.getElementById("vaccineDate").value;
+    const reminderMessage = document.getElementById("reminderMessage");
+
+    if (!selectedDate) {
+      reminderMessage.style.color = "red";
+      reminderMessage.innerText = "Please select a date.";
+      return;
+    }
+
+    const today = new Date();
+    const vaccineDate = new Date(selectedDate);
+
+    // Compare dates
+    if (vaccineDate <= today) {
+      reminderMessage.style.color = "green";
+      reminderMessage.innerText = "🎉 Great! You are vaccinated!";
+    } else {
+      // Calculate 2 days after selected date
+      const scheduleDate = new Date(vaccineDate);
+      scheduleDate.setDate(scheduleDate.getDate() + 2);
+
+      // Format date
+      const options = { year: 'numeric', month: 'short', day: 'numeric' };
+      const formattedDate = scheduleDate.toLocaleDateString('en-IN', options);
+
+      // Google Maps search link
+      const mapsLink = `https://www.google.com/maps/search/hospitals+near+me`;
+
+      reminderMessage.style.color = "blue";
+      reminderMessage.innerHTML = `🗓 Schedule your vaccination on <strong>${formattedDate}</strong> at nearest hospital: <a href="${mapsLink}" target="_blank">Find Hospitals</a>`;
+    }
+  };
+</script>
+
+<!-- Botpress Webchat Script -->
+<script src="https://cdn.botpress.cloud/webchat/v0/inject.js"></script>
+<script>
+  window.botpressWebChat.init({
+    composerPlaceholder: "Type your message...",
+    botId: "your-bot-id-here",     // apna Bot ID yahan dalen
+    clientId: "your-client-id",    // apna Client ID yahan dalen
+    hostUrl: "https://cdn.botpress.cloud/webchat/v0",
+    messagingUrl: "https://messaging.botpress.cloud",
+    showPoweredBy: false,
+    theme: "prism",
+    themeColor: "#c2185b",         // CerviCare ke theme color
+    botName: "CerviCare.Ai"       // 👈 Ye line add kari
+  });
+</script>
+
+
+
+</body>
+</html>

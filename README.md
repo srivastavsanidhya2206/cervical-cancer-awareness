@@ -3,6 +3,7 @@ Cervical Cancer Awareness Website
 This is my first web development project, created for the Smart India Hackathon 2025 under the theme of Cervical Cancer Awareness. The website helps users learn about cervical cancer, find nearby hospitals, and check a vaccination calendar for timely prevention. It was built as part of my college team submission from Galgotias University.
 
 Features:
+
 • Find nearest hospital for vaccination or screening  
 • View vaccination calendar and reminders  
 • Informative section about cervical cancer prevention  
